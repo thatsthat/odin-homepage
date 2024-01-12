@@ -1,0 +1,65 @@
+body {
+  outline: 0;
+  margin: 0;
+}
+p {
+  font-size: 0.7rem;
+}
+.contentDiv {
+  padding: 2rem;
+}
+
+.upperDiv {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(-15deg, white 35%, #30d5c8 35%);
+}
+
+.myPictureDiv {
+  width: 250px;
+  flex: none;
+  position: relative;
+}
+.myPictureImg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem 1rem;
+  box-shadow: 0 1px 2px;
+}
+.name {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  padding-bottom: 0;
+  color: white;
+  bottom: 0;
+  font-size: 3rem;
+  text-shadow: 1px 1px black;
+  width: 100%;
+}
+
+.photoTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.photoText {
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.photoIcons {
+  display: flex;
+  justify-content: right;
+}
+
+.photoIcons img {
+  margin: 0px 5px;
+}
