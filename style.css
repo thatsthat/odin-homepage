@@ -16,13 +16,17 @@ p {
 }
 
 .myPictureDiv {
-  width: 250px;
-  flex: none;
+  width: 220px;
+  height: 300px;
   position: relative;
+  flex: none;
 }
 .myPictureImg {
-  max-height: 100%;
-  max-width: 100%;
+  /* max-height: 100%;
+  max-width: 100%; */
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .aboutMe {
@@ -79,7 +83,7 @@ p {
 }
 
 .projectItem {
-  max-width: 180px;
+  max-width: 200px;
   box-shadow: 0 1px 2px;
   font-size: 0.7rem;
 }
@@ -139,11 +143,86 @@ p {
 }
 
 .myPictureImgBottom {
-  max-height: 100%;
-  max-width: 100%;
+  width: 350px;
+  height: 247px;
+  object-fit: cover;
 }
 .contactItem {
   display: flex;
   font-size: 0.7rem;
   align-items: center;
+}
+
+@media (max-width: 500px) {
+  .projectGrid {
+    margin-bottom: 2rem;
+  }
+  .upperDiv {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .myPictureDiv {
+    width: 200px;
+  }
+  .myPictureImg {
+    width: 200px;
+  }
+  .myPictureDivBottom {
+    width: 180px;
+  }
+  .myPictureImgBottom {
+    width: 180px;
+    object-position: 70%;
+  }
+  .photoIcons {
+    align-self: center;
+  }
+  .aboutMe {
+    padding: 0;
+    box-shadow: 0 0 0;
+    margin: 4rem 0;
+    padding: 1rem 1rem 0rem 1rem;
+  }
+  .middleTitle {
+    text-align: center;
+  }
+  .contentDiv {
+    padding: 0;
+  }
+  .photoText {
+    margin-bottom: 0.5rem;
+  }
+  .photoTitle {
+    text-align: center;
+  }
+  .lowerDiv {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .myPictureDivBottom {
+    width: 95vw;
+    flex: none;
+    position: relative;
+  }
+
+  .myPictureImgBottom {
+    width: 95vw;
+    height: 247px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  .myPictureDiv {
+  }
+
+  .projectGrid {
+  }
+  .myPictureDivBottom {
+    width: 180px;
+  }
+  .myPictureImgBottom {
+    width: 180px;
+    object-position: 70%;
+  }
 }
